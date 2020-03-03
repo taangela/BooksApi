@@ -1,8 +1,6 @@
 const formatFullname = require('../formatFullname.js');
 const expect = require('chai').expect;
 
-
-
 describe('formatFullname', () => {
   it('should return an error if "fullName" arg is not a string', () => {
     expect(formatFullname()).to.equal('Error');
@@ -26,7 +24,5 @@ describe('formatFullname', () => {
     expect(formatFullname('AMANDA DOE')).to.equal('Amanda Doe');
     expect(formatFullname('aMaNdA dOe')).to.equal('Amanda Doe');
 
-} );
-
-
+  });
 });
